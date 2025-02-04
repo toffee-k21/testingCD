@@ -7,6 +7,6 @@ res.json(
 )
 })
 
-app.listen("0.0.0.0",8000,()=>{
+app.listen(8000,"0.0.0.0",()=>{
     console.log("started on port 8000")
 })
