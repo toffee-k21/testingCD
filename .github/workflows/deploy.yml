@@ -23,6 +23,9 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/testingCD &&
+              git checkout master &&
+              git fetch --all &&
+              git reset --hard origin/master &&
               git pull origin master &&
               sudo npm i &&
               sudo pm2 stop index.js &&
