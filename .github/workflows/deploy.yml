@@ -31,6 +31,6 @@ jobs:
               git pull origin master &&
               sudo npm i &&
               ls &&
-              # sudo pm2 stop ./index.js &&
-              sudo node index.js
+              sudo pm2 stop index.js &&
+              sudo pm2 start index.js
               '
