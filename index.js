@@ -8,7 +8,7 @@ res.json(
 })
 
 app.get("/test",(req,res)=>{
-    res.send("<html><body><h1>Hello</h1></body></html>")
+    res.render("<html><body><h1>Hello</h1></body></html>")
 })
 
 app.listen(8000,"0.0.0.0",()=>{
