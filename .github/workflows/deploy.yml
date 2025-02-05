@@ -28,7 +28,6 @@ jobs:
               git reset --hard origin/master &&
               git pull origin master &&
               sudo npm i &&
-              pm2 kill &&
+              pm2 stop index.js &&
               pm2 start index.js
-              pm2 save
               '
