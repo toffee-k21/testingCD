@@ -31,6 +31,6 @@ jobs:
               git pull origin master &&
               sudo npm i &&
               ls &&
-             pm2 delete index.js &&
-             pm2 start index.js
+             pm2 stop /home/ubuntu/testingCD/index.js &&
+             pm2 start /home/ubuntu/testingCD/index.js
               '
